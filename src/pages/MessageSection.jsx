@@ -12,13 +12,13 @@ export default function MessageSection() {
     }
 
     return (
-        <section className='relative bg-left sm:bg-center bg-cover h-screen' style={{ backgroundImage: `url(${jenny})` }}>
+        <section className='relative bg-left bg-cover h-screen' style={{ backgroundImage: `url(${jenny})` }}>
             <motion.div
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1.5 }}
                 viewport={{ once: true }}
-                className='relative text-center bg-center bg-95% sm:bg-50% bg-no-repeat flex flex-col justify-center items-center h-full text-lg text-[#cc9842]'
+                className='relative text-center bg-center bg-95% bg-no-repeat flex flex-col justify-center items-center h-full text-lg text-[#cc9842]'
                 style={{ backgroundImage: `url(${frem})` }}
             >
                 <div className='flex flex-col justify-start items-center'>

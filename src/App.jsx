@@ -1,7 +1,6 @@
 import './App.css'
 import { useState } from 'react'
 import BannerSection from './pages/BannerSection'
-import CountDownSection from './pages/CountDownSection'
 import GallerySection from './pages/GallerySection'
 import ScheduleSection from './pages/ScheduleSection'
 import MessageSection from './pages/MessageSection'
@@ -19,13 +18,13 @@ function App() {
 
   return (
     <>
-      <BannerSection isOpen={isOpen} onClose={handleClose}/>
+      <BannerSection isOpen={isOpen} onClose={handleClose} />
       {!isOpen && (
-        <div className='flex'>
-          <div className='w-9/12 relative'>
+        <div className='flex relative'>
+          <div className='h-screen hidden sm:block sm:w-8/12 relative'>
             <BannerFixed />
           </div>
-          <div className='w-3/12 relative'>
+          <div className='h-full sm:w-4/12 relative'>
             <ScheduleSection />
             <GallerySection />
             <MessageSection />

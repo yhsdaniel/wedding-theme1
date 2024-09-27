@@ -5,7 +5,7 @@ export default function BannerSection({ isOpen, onClose }) {
   if(!isOpen) return null
 
   return (
-    <section className={"h-screen bg-black/30 bg-fixed bg-cover bg-center bg-no-repeat bg-blend-multiply text-white flex flex-col justify-center items-center text-center"} style={{ backgroundImage: `url(${banner})` }}>
+    <section className={"h-screen bg-black/60 bg-fixed bg-cover bg-center bg-no-repeat bg-blend-multiply text-white flex flex-col justify-center items-center text-center"} style={{ backgroundImage: `url(${banner})` }}>
       {/* <img src={banner} alt="banner" className='size-full object-cover mix-blend-multiply bg-fixed' /> */}
       <div className='mx-[10%] mt-auto absolute'>
         <p>THE WEDDING OF</p>

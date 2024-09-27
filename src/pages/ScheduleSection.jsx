@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import flower from '../image/bg-flower.jpg'
+import horizontal1 from '../image/horizontal1.jpg'
 
 const ceremony = [
     {
@@ -23,9 +23,9 @@ const ceremony = [
 
 export default function ScheduleSection() {
     return (
-        <section id='schedule' className='h-full bg-white/30 bg-cover bg-left sm:bg-center bg-blend-lighten' style={{ backgroundImage: `url(${flower})` }}>
-            <div className='h-full p-8 mx-0 md:mx-[10%] my-auto md:flex justify-center items-center'>
-                <div className='size-full flex flex-col md:flex md:flex-row md:justify-between md:items-center gap-8'>
+        <section className='h-full bg-black/30 bg-cover bg-center bg-blend-multiply' style={{ backgroundImage: `url(${horizontal1})` }}>
+            <div className='h-full p-8 mx-0 my-auto'>
+                <div className='size-full flex flex-col gap-6'>
                     <div className='WeddingEvent'>
                         <div className="contain-card">
                             {ceremony.map((item, index) => (
