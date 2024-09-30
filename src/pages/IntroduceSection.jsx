@@ -1,46 +1,86 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import banner from '../image/banner.jpg'
 import data from '../dataForWedding.json'
-import arrow from '../image/arrow-animation.gif'
+import imageformen from '../image/men.jpg'
+import imageforwomen from '../image/women.jpg'
 
 export default function IntroduceSection() {
     return (
-        <section className='h-screen bg-black/50 text-white bg-cover bg-center bg-blend-multiply' style={{ backgroundImage: `url(${banner})` }}>
-            <div className='h-full px-8 mx-0 my-auto'>
-                <div className='size-full flex flex-col justify-end items-center'>
-                    <span>The Wedding of</span>
-                    <div className='flex justify-center items-center'>
-                        <motion.p
-                            initial={{ opacity: 0, translateX: -100 }}
-                            animate={{ opacity: 1, translateX: 1 }}
-                            transition={{ duration: 1 }}
-                            className='text-xl'
-                        >
-                            {data.men}
-                        </motion.p>
-                        <p className='text-xs mx-2'>{data.date}</p>
-                        <motion.p
-                            initial={{ opacity: 0, translateX: 100 }}
-                            animate={{ opacity: 1, translateX: 1 }}
-                            transition={{ duration: 1 }}
-                            className='text-xl'
-                        >
-                            {data.women}
-                        </motion.p>
-                    </div>
-                    <hr className='w-full my-4' />
-                    <motion.p
-                        initial={{ opacity: 0, scale: 0 }}
-                        animate={{ opacity: 1, scale: 1 }}
+        <div className='h-full p-8 flex flex-col justify-center items-center'>
+            <motion.img
+                src={imageformen}
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+                width={200}
+                height={200}
+                className='size-80 rounded-full object-cover m-4'
+            />
+            <div className='text-white text-center text-sm'>
+                <motion.p 
+                    initial={{ opacity: 0, translateX: -100 }}
+                    whileInView={{ opacity: 1, translateX: 1 }}
+                    transition={{ duration: 1 }}
+                >
+                    {data.fullnameformen}
+                </motion.p>
+                <div className='my-4'>
+                    <p>Anak dari :</p>
+                    <motion.p 
+                        initial={{ opacity: 0, translateX: -100 }}
+                        whileInView={{ opacity: 1, translateX: 1 }}
                         transition={{ duration: 1 }}
-                        className='italic text-center text-sm my-8'
                     >
-                        {data.quotes}
+                        Bapak {data.fatherformen}
                     </motion.p>
-                    <img src={arrow} width={50} alt="Arrow Gif" />
+                    &
+                    <motion.p 
+                        initial={{ opacity: 0, translateX: 100 }}
+                        whileInView={{ opacity: 1, translateX: 1 }}
+                        transition={{ duration: 1 }}
+                    >
+                        Ibu {data.motherformen}
+                    </motion.p>
                 </div>
             </div>
-        </section>
+            <motion.img
+                src={imageforwomen}
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+                width={200}
+                height={200}
+                className='size-80 rounded-full object-cover m-4'
+            />
+            <div className='text-white text-center text-sm'>
+                <motion.p 
+                    initial={{ opacity: 0, translateX: -100 }}
+                    whileInView={{ opacity: 1, translateX: 1 }}
+                    transition={{ duration: 1 }}
+                >
+                    {data.fullnameforwomen}
+                </motion.p>
+                <div className='my-4'>
+                    <p>Anak dari :</p>
+                    <motion.p 
+                        initial={{ opacity: 0, translateX: -100 }}
+                        whileInView={{ opacity: 1, translateX: 1 }}
+                        transition={{ duration: 1 }}
+                    >
+                        Bapak {data.fatherforwomen}
+                    </motion.p>
+                    &
+                    <motion.p 
+                        initial={{ opacity: 0, translateX: 100 }}
+                        whileInView={{ opacity: 1, translateX: 1 }}
+                        transition={{ duration: 1 }}
+                    >
+                        Ibu {data.motherforwomen}
+                    </motion.p>
+                </div>
+            </div>
+        </div>
     )
 }
