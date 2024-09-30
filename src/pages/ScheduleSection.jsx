@@ -23,7 +23,7 @@ const ceremony = [
 
 export default function ScheduleSection() {
     return (
-        <section className='h-full bg-black/30 bg-cover bg-center bg-blend-multiply' style={{ backgroundImage: `url(${horizontal1})` }}>
+        <section className='h-full bg-black/30 bg-cover bg-center bg-blend-multiply'>
             <div className='h-full p-8 mx-0 my-auto'>
                 <div className='size-full flex flex-col gap-6'>
                     <div className='WeddingEvent'>
