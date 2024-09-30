@@ -24,6 +24,7 @@ function App() {
     setIsAnimation('animate-scrollTop')
     document.body.style.overflow = 'auto'
     wonAudio.play()
+    window.scrollTo(0, 0)
   }
 
   return (
@@ -33,16 +34,12 @@ function App() {
         <div className='h-screen hidden sm:block sm:w-8/12 relative'>
           <BannerFixed />
         </div>
-        <div className='h-full sm:w-4/12 relative'>
-          <div className='bg-black/50 bg-blend-multiply bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(${banner})` }}>
-            <QuotesSection />
-          </div>
-          <div className='bg-black/50 bg-blend-multiply bg-fixed bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(${horizontal1})` }}>
-            <IntroduceSection />
-            <ScheduleSection />
-            <GallerySection />
-            <MessageSection />
-          </div>
+        <div className='h-full sm:w-4/12 relative bg-black/50 bg-blend-multiply bg-fixed bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(${horizontal1})` }}>
+          <QuotesSection />
+          <IntroduceSection />
+          <ScheduleSection />
+          <GallerySection />
+          <MessageSection />
         </div>
       </div>
     </>

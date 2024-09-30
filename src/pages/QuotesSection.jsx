@@ -7,7 +7,7 @@ import arrow from '../image/arrow-animation.gif'
 export default function QuotesSection() {
     return (
         <section className='h-screen bg-black/50 text-white bg-cover bg-center bg-blend-multiply' style={{ backgroundImage: `url(${banner})` }}>
-            <div className='h-full px-8 mx-0 my-auto'>
+            <div className='h-full px-8 py-4 mx-0 my-auto'>
                 <div className='size-full flex flex-col justify-end items-center'>
                     <span>The Wedding of</span>
                     <div className='flex justify-center items-center'>

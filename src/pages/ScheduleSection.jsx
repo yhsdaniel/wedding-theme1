@@ -38,13 +38,15 @@ export default function ScheduleSection() {
                                 >
                                     <div className="card-body">
                                         <p className='text-2xl'>{item.title}</p>
-                                        <div className='my-8'>
+                                        <hr className='w-full my-4' />
+                                        <div className='my-4'>
                                             <ul>
                                                 <li>{item.day}</li>
                                                 <li>{item.date}</li>
                                                 <li>{item.time}</li>
                                             </ul>
                                         </div>
+                                        <hr className='w-full my-4' />
                                         <p className='my-4 text-lg'>{item.location}</p>
                                         <p className='text-sm'>{item.address}</p>
                                         <button className="btn">Open google maps</button>
