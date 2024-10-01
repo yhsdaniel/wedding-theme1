@@ -1,5 +1,5 @@
 import React from 'react'
-import useCountDown from './useCountDown'
+import useCountDown from '../components/useCountDown'
 
 const ShowCounter = ({ days, hours, minutes, seconds }) => {
     return (
@@ -35,22 +35,23 @@ const ShowCounter = ({ days, hours, minutes, seconds }) => {
 export default function CountDown({ targetDate }) {
     const [days, hours, minutes, seconds] = useCountDown(targetDate)
 
-    if(days + hours + minutes + seconds > 0){
+    if (days + hours + minutes + seconds <= 0) {
         return (
-            <ShowCounter 
-                days={days}
-                hours={hours}
-                minutes={minutes}
-                seconds={seconds}
-            />
-        )
-    } else {
-        return (
-            <ShowCounter 
+            <ShowCounter
                 days={0}
                 hours={0}
                 minutes={0}
                 seconds={0}
+
+            />
+        )
+    } else {
+        return (
+            <ShowCounter
+                days={days}
+                hours={hours}
+                minutes={minutes}
+                seconds={seconds}
             />
         )
     }

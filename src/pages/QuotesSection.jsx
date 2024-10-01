@@ -7,7 +7,7 @@ import arrow from '../image/arrow-animation.gif'
 export default function QuotesSection() {
     return (
         <section className='h-screen bg-black/50 text-white bg-cover bg-center bg-blend-multiply' style={{ backgroundImage: `url(${banner})` }}>
-            <div className='h-full px-8 py-4 mx-0 my-auto'>
+            <div className='h-full p-8 mx-0 my-auto'>
                 <div className='size-full flex flex-col justify-end items-center'>
                     <span>The Wedding of</span>
                     <div className='flex justify-center items-center'>
@@ -17,16 +17,16 @@ export default function QuotesSection() {
                             transition={{ duration: 1 }}
                             className='text-xl'
                         >
-                            {data.men}
+                            {data.men.name}
                         </motion.p>
-                        <p className='text-xs mx-2'>{data.date}</p>
+                        <p className='text-xs mx-4'>{data.date}</p>
                         <motion.p
                             initial={{ opacity: 0, translateX: 100 }}
                             whileInView={{ opacity: 1, translateX: 1 }}
                             transition={{ duration: 1 }}
                             className='text-xl'
                         >
-                            {data.women}
+                            {data.women.name}
                         </motion.p>
                     </div>
                     <hr className='w-full my-4' />

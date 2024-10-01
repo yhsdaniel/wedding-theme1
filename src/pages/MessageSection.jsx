@@ -3,14 +3,9 @@ import { motion } from 'framer-motion'
 import jenny from '../image/jenny-bg.png'
 import frem from '../image/frem.png'
 import CountDown from '../components/CountDown';
+import data from '../dataForWedding.json'
 
 export default function MessageSection() {
-    const database = {
-        manName: 'Daniel',
-        womanName: 'Listi',
-        message: 'Towards a Special Day and we hope you are part of our special day'
-    }
-
     return (
         <section className='relative bg-left bg-cover h-screen' style={{ backgroundImage: `url(${jenny})` }}>
             <motion.div
@@ -22,10 +17,10 @@ export default function MessageSection() {
                 style={{ backgroundImage: `url(${frem})` }}
             >
                 <div className='flex flex-col justify-start items-center'>
-                    <p className='m-2 text-[2em]'>{database.manName}</p>
+                    <p className='m-2 text-[2em]'>{data.men.name}</p>
                     <p className='m-2 text-[2em]'>&</p>
-                    <p className='m-2 text-[2em]'>{database.womanName}</p>
-                    <p className='w-6/12 sm:w-8/12 text-sm mt-4'>{database.message}</p>
+                    <p className='m-2 text-[2em]'>{data.women.name}</p>
+                    <p className='w-6/12 sm:w-8/12 text-sm mt-4'>Towards a Special Day and we hope you are part of our special day</p>
                     <div className='absolute bottom-24 sm:bottom-28 flex justify-center items-center'>
                         <CountDown targetDate={'Dec 7, 2024 09:00:00'} />
                     </div>

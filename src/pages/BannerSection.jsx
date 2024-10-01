@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import data from '../dataForWedding.json'
 import banner from '../image/banner.jpg'
 
 export default function BannerSection({ onClose, animationScroll }) {
@@ -13,7 +14,7 @@ export default function BannerSection({ onClose, animationScroll }) {
         >
           <p>THE WEDDING OF</p>
           <h1 className='text-5xl'>
-            Daniel & Listi
+            {data.men.name} & {data.women.name}
           </h1>
         </motion.div>
         <motion.p
@@ -30,7 +31,7 @@ export default function BannerSection({ onClose, animationScroll }) {
           transition={{ duration: 1, delay: 0.7 }}
           className='my-10 text-xl'
         >
-          7 Desember 2024
+          {data.date}
         </motion.p>
         <motion.button
           initial={{ opacity: 0, scale: 0 }}
@@ -39,7 +40,7 @@ export default function BannerSection({ onClose, animationScroll }) {
           className='py-2 px-4 bg-white text-black rounded-xl opacity-75 hover:opacity-100 ease-in-out'
           onClick={onClose}
         >
-          Open invitation
+          Buka Undangan
         </motion.button>
       </div>
     </section>

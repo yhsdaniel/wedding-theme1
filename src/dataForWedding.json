@@ -1,12 +1,36 @@
 {
-    "men": "Daniel",
-    "fullnameformen": "Daniel Kristiawan",
-    "women": "Listi",
-    "fullnameforwomen": "Listiany Sukmawaty",
+    "men": {
+        "name": "Daniel",
+        "fullname": "Daniel Kristiawan",
+        "instagram": "yhskris",
+        "linkinstagram": "https://www.instagram.com/yhskris/",
+        "father": "Johan Andrianto",
+        "mother": "Heri Pebruari Ningsih",
+        "bankname": "BCA",
+        "nobank": "6320435089"
+    },
+    "women": {
+        "name": "Listi",
+        "fullname": "Listiany Sukmawaty",
+        "instagram": "lis.lingz",
+        "linkinstagram": "https://www.instagram.com/lis.lingz/",
+        "father": "Oyong",
+        "mother": "Muflihah",
+        "bankname": "BCA",
+        "nobank": "6320435089"
+    },
     "date": "Sabtu, 7 Desember 2024",
-    "quotes": "A good marriage isn't something you find; it's something you make and you have to keep on making it.",
-    "fatherformen": "Johan Andrianto",
-    "motherformen": "Heri Pebruari Ningsih",
-    "fatherforwomen": "Yoyong",
-    "motherforwomen": "Muflihah"
+    "church": {
+        "name": "Gereja Katolik Kim Tae Gon",
+        "time": "09.00 - 12.00",
+        "address": "Jalan Puspa Gading Timur No.1 Blok H2, RT.5/RW.2, Pegangsaan Dua, Kec. Klp. Gading, Jkt Utara, Daerah Khusus Ibukota Jakarta 14250",
+        "googlemaps": "https://www.google.com/maps/place/St.+Andrew+Kim+Tae+Gon+Catholic+Church/@-6.1737434,106.9133891,17z/data=!3m1!4b1!4m6!3m5!1s0x2e698b2a887d4349:0xf63bd51233940aba!8m2!3d-6.1737487!4d106.915964!16s%2Fg%2F119pg1_8s?entry=ttu&g_ep=EgoyMDI0MDkyOS4wIKXMDSoASAFQAw%3D%3D"
+    },
+    "reseptions": {
+        "name": "Hotel Pullman",
+        "time": "18.00 - finish",
+        "address": "Jalan Puspa Gading Timur No.1 Blok H2, RT.5/RW.2, Pegangsaan Dua, Kec. Klp. Gading, Jkt Utara, Daerah Khusus Ibukota Jakarta 14250",
+        "googlemaps": "https://www.google.com/maps/place/Pullman+Jakarta+Central+Park/@-6.177994,106.7868175,17z/data=!3m2!4b1!5s0x2e69f65f7d4dbbd1:0xa8d9691112d3f21d!4m9!3m8!1s0x2e69f65f648bdc49:0x3dfec5a3d3208966!5m2!4m1!1i2!8m2!3d-6.1779993!4d106.7893924!16s%2Fg%2F1ptw3_q7z?entry=ttu&g_ep=EgoyMDI0MDkyOS4wIKXMDSoASAFQAw%3D%3D"
+    },
+    "quotes": "A good marriage isn't something you find; it's something you make and you have to keep on making it."
 }
