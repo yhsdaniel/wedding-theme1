@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import BannerSection from './pages/BannerSection'
 import GallerySection from './pages/GallerySection'
 import ScheduleSection from './pages/ScheduleSection'
-import MessageSection from './pages/MessageSection'
+import CountdownSection from './pages/CountdownSection'
 import BannerFixed from './pages/BannerFixed'
 import music from '../public/upload/music.mp3'
 import horizontal1 from './image/horizontal1.jpg'
@@ -41,7 +41,7 @@ function App() {
             <IntroduceSection />
             <ScheduleSection />
             <GallerySection />
-            <MessageSection />
+            <CountdownSection />
             <BankSection />
             <RSVPSection />
           </div>

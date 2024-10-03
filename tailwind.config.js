@@ -19,7 +19,7 @@ export default {
       '95%': '95%'
     },
     boxShadow: {
-      'whiteShadow': '0px 0px 5px 0px rgba(255, 255, 255, .7)'
+      'whiteShadow': '0px 0px 8px 0px rgba(255, 255, 255, .7) inset'
     }
   },
   plugins: [],

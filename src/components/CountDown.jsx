@@ -7,25 +7,25 @@ const ShowCounter = ({ days, hours, minutes, seconds }) => {
             <div className='container-time'>
                 <div className='box'>
                     <span>{days}</span>
-                    <span className='text-sm'>Days</span>
+                    <span className='text-xs'>Days</span>
                 </div>
             </div>
             <div className='container-time'>
                 <div className='box'>
                     <span>{hours}</span>
-                    <span className='text-sm'>Hours</span>
+                    <span className='text-xs'>Hours</span>
                 </div>
             </div>
             <div className='container-time'>
                 <div className='box'>
                     <span>{minutes}</span>
-                    <span className='text-sm'>Minutes</span>
+                    <span className='text-xs'>Minutes</span>
                 </div>
             </div>
             <div className='container-time'>
                 <div className='box'>
                     <span>{seconds}</span>
-                    <span className='text-sm'>Seconds</span>
+                    <span className='text-xs'>Seconds</span>
                 </div>
             </div>
         </div>

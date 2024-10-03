@@ -56,7 +56,7 @@ export default function GallerySection() {
     };
 
     return (
-        <section className='h-full p-8 flex flex-col justify-center items-center'>
+        <section className='h-full px-4 py-8 flex flex-col justify-center items-center'>
             <h1 className='text-xl sm:text-4xl text-white my-8'>Gallery</h1>
             <div className='grid grid-rows-4 grid-flow-col gap-4'>
                 {items.map((item, index) => (
@@ -76,7 +76,7 @@ export default function GallerySection() {
                             width={500}
                             height={900}
                             loading='lazy'
-                            className='rounded-lg size-full shadow-whiteShadow'
+                            className='rounded-lg size-full'
                         />
                     </motion.div>
                 ))}

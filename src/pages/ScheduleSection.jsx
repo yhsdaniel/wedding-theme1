@@ -35,19 +35,18 @@ export default function ScheduleSection() {
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 transition={{ duration: 1.5 }}
                                 viewport={{ once: true }}
+                                className="card-body"
                             >
-                                <div className="card-body">
-                                    <p className='text-2xl'>{item.title}</p>
-                                    <div className='my-4'>
-                                        <ul>
-                                            <li>{item.date}</li>
-                                            <li>{item.time}</li>
-                                        </ul>
-                                    </div>
-                                    <p className='my-4 text-lg'>{item.location}</p>
-                                    <p className='text-sm'>{item.address}</p>
-                                    <a href={item.google} className="btn">Open google maps</a>
+                                <p className='text-2xl'>{item.title}</p>
+                                <div className='my-4'>
+                                    <ul>
+                                        <li>{item.date}</li>
+                                        <li>{item.time}</li>
+                                    </ul>
                                 </div>
+                                <p className='my-4 text-lg'>{item.location}</p>
+                                <p className='text-sm'>{item.address}</p>
+                                <a href={item.google} className="btn">Open google maps</a>
                             </motion.div>
 
                         ))}

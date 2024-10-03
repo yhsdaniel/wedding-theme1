@@ -102,7 +102,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #cc9842;
+    color: #fff;
 }
 
 .container {
@@ -113,21 +113,17 @@ body {
 }
 
 .container-time {
-    width: 60px;
-    height: 60px;
-    border: 5px solid #cc9842;
-    border-radius: 8px;
     margin: 0 .8rem;
 }
 
 .box {
     width: 60px;
     height: 60px;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, .6);
     border-radius: 8px;
+    color: #fff;
     font-size: 18px;
     transform: translate3d(3px, -10px, 0);
-    box-shadow: -2px 2px 5px 1px #dbdbdb;
     display: flex;
     justify-content: center;
     align-items: center;

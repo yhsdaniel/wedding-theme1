@@ -15,7 +15,7 @@ export default function IntroduceSection() {
                 transition={{ duration: 1 }}
                 width={200}
                 height={200}
-                className='size-80 rounded-full object-cover m-4'
+                className='size-64 rounded-full object-cover m-4'
             />
             <div className='mb-8 text-white text-center text-sm flex flex-col justify-center items-center'>
                 <motion.p
@@ -58,7 +58,7 @@ export default function IntroduceSection() {
                 transition={{ duration: 1 }}
                 width={200}
                 height={200}
-                className='size-80 rounded-full object-cover m-4'
+                className='size-64 rounded-full object-cover m-4'
             />
             <div className='mb-8 text-white text-center text-sm flex flex-col justify-center items-center'>
                 <motion.p
