@@ -51,7 +51,7 @@ export default function BankSection() {
                 initial={{ opacity: 0, translateX: 100 }}
                 whileInView={{ opacity: 1, translateX: 1 }}
                 transition={{ duration: 1 }}
-                className='p-8 m-4 bg-white/40 text-white rounded-2xl'
+                className='p-8 m-4 bg-white/20 text-white rounded-2xl'
             >
                 <p className='text-xl'>Wedding Gift</p>
                 <p className='text-sm my-4'>Kehadiran Bapak/Ibu/Om/Tante/Saudara/i merupakan suatu kebahagiaan dan tanda kasih bagi kami. Apabila ingin memberi tanda kasih / hadiah dalam bentuk lain bisa melalui:</p>

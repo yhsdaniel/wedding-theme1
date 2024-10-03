@@ -7,11 +7,10 @@ import MessageSection from './pages/MessageSection'
 import BannerFixed from './pages/BannerFixed'
 import music from '../public/upload/music.mp3'
 import horizontal1 from './image/horizontal1.jpg'
-import banner from './image/banner.jpg'
 import IntroduceSection from './pages/IntroduceSection'
 import QuotesSection from './pages/QuotesSection'
 import BankSection from './pages/BankSection'
-import { Toaster } from 'react-hot-toast'
+import RSVPSection from './pages/RSVPSection'
 
 function App() {
   const [isOpen, setIsOpen] = useState(true)
@@ -44,13 +43,10 @@ function App() {
             <GallerySection />
             <MessageSection />
             <BankSection />
+            <RSVPSection />
           </div>
         </div>
       </div>
-
-      <Toaster 
-        position='top-center'
-      />
     </>
   )
 }
