@@ -20,6 +20,9 @@ export default {
     },
     boxShadow: {
       'whiteShadow': '0px 0px 8px 0px rgba(255, 255, 255, .7) inset'
+    },
+    gridTemplateColumns: {
+      'minmax01fr': 'repeat(3, minmax(0, 1fr))'
     }
   },
   plugins: [],

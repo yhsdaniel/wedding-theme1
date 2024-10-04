@@ -9,7 +9,7 @@ import music from '../public/upload/music.mp3'
 import horizontal1 from './image/horizontal1.jpg'
 import IntroduceSection from './pages/IntroduceSection'
 import QuotesSection from './pages/QuotesSection'
-import BankSection from './pages/BankSection'
+import WeddingGiftSection from './pages/WeddingGiftSection'
 import RSVPSection from './pages/RSVPSection'
 
 function App() {
@@ -35,14 +35,14 @@ function App() {
         <div className='h-screen hidden sm:block sm:w-8/12 relative'>
           <BannerFixed />
         </div>
-        <div className='h-full sm:w-4/12 relative' >
+        <div className='size-full sm:w-4/12 relative' >
           <div className='size-full bg-black/60 bg-blend-multiply bg-fixed bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(${horizontal1})` }}>
             <QuotesSection />
             <IntroduceSection />
             <ScheduleSection />
             <GallerySection />
             <CountdownSection />
-            <BankSection />
+            <WeddingGiftSection />
             <RSVPSection />
           </div>
         </div>

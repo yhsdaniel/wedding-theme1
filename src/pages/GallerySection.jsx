@@ -57,7 +57,7 @@ export default function GallerySection() {
 
     return (
         <section className='h-full px-4 py-8 flex flex-col justify-center items-center'>
-            <h1 className='text-xl sm:text-4xl text-white my-8'>Gallery</h1>
+            <h1 className='text-2xl text-white my-8'>Gallery</h1>
             <div className='grid grid-rows-4 grid-flow-col gap-4'>
                 {items.map((item, index) => (
                     <motion.div

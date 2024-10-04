@@ -10,7 +10,7 @@ export default function QuotesSection() {
             <div className='h-full p-8 mx-0 my-auto'>
                 <div className='size-full flex flex-col justify-end items-center'>
                     <span>The Wedding of</span>
-                    <div className='flex justify-center items-center'>
+                    <div className='w-full flex justify-center items-center'>
                         <motion.p
                             initial={{ opacity: 0, translateX: -100 }}
                             whileInView={{ opacity: 1, translateX: 1 }}

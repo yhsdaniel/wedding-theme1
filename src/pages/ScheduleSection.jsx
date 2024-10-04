@@ -23,8 +23,8 @@ const ceremony = [
 
 export default function ScheduleSection() {
     return (
-        <section className='h-full mx-[10%] my-auto flex flex-col justify-center items-center'>
-            <h1 className='text-xl sm:text-4xl text-white my-8'>Schedule</h1>
+        <section className='h-full mx-[8%] my-auto flex flex-col justify-center items-center'>
+            <h1 className='text-2xl text-white my-8'>Schedule</h1>
             <div className='size-full flex flex-col gap-6'>
                 <div className='WeddingEvent'>
                     <div className="contain-card">

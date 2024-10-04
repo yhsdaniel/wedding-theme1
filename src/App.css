@@ -113,17 +113,18 @@ body {
 }
 
 .container-time {
-    margin: 0 .8rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
 }
 
 .box {
-    width: 60px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, .6);
     border-radius: 8px;
     color: #fff;
     font-size: 18px;
-    transform: translate3d(3px, -10px, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,7 +138,10 @@ body {
 
 .show-counter {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: center;
+    width: 100%;
 }
 
 .countdown {
@@ -151,17 +155,6 @@ body {
     .f-txt-countdown {
         text-align: center;
         padding: 0 2rem;
-    }
-
-    .container-time {
-        width: 60px;
-        height: 60px;
-        margin: 0 .8rem;
-    }
-
-    .box {
-        width: 60px;
-        height: 60px;
     }
 
     .f-number {

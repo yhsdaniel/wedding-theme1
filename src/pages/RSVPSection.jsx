@@ -30,7 +30,7 @@ export default function RSVPSection() {
         try {
             const { data, error } = await supabase.from('attendance').insert({ name: name, message: message, attendance: attendance })
             dataAttendance.push(data)
-            
+
             if (error) throw error
         } catch (error) {
             console.log(error)
@@ -40,12 +40,13 @@ export default function RSVPSection() {
     }
 
     return (
-        <section className='h-full p-4 bg-black/70 bg-cover bg-no-repeat bg-blend-multiply' style={{ backgroundImage: `url(${jenny})`}}>
-            <h1 className='text-xl sm:text-2xl text-white text-center my-8'>Konfirmasi Kehadiran & Ucapan</h1>
+        <section className='h-full p-4 bg-black/70 bg-cover bg-no-repeat bg-blend-multiply' style={{ backgroundImage: `url(${jenny})` }}>
+            <h1 className='text-2xl text-white text-center my-8'>Konfirmasi Kehadiran & Ucapan</h1>
             <motion.div
                 initial={{ opacity: 0, translateX: 100 }}
                 whileInView={{ opacity: 1, translateX: 1 }}
                 transition={{ duration: 1 }}
+                viewport={{ once: true }}
                 className='p-8 m-4 bg-black/40 rounded-2xl'
             >
                 <form className="max-w-sm mx-auto">
