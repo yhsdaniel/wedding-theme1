@@ -13,7 +13,7 @@ export default function BannerSection({ onClose, animationScroll }) {
           transition={{ duration: 1, delay: 0.3 }}
         >
           <p>THE WEDDING OF</p>
-          <h1 className='text-5xl'>
+          <h1 className='text-5xl my-4 tracking-wider font-greatvibes'>
             {data.men.name} & {data.women.name}
           </h1>
         </motion.div>

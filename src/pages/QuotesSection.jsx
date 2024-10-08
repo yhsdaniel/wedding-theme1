@@ -7,24 +7,24 @@ import arrow from '../image/arrow-animation.gif'
 export default function QuotesSection() {
     return (
         <section className='h-screen bg-black/50 text-white bg-cover bg-center bg-blend-multiply' style={{ backgroundImage: `url(${banner})` }}>
-            <div className='h-full p-8 mx-0 my-auto'>
+            <div className='h-full p-4 md:p-8 mx-0 my-auto'>
                 <div className='size-full flex flex-col justify-end items-center'>
                     <span>The Wedding of</span>
-                    <div className='w-full flex justify-center items-center'>
+                    <div className='w-full flex justify-center items-center font-greatvibes'>
                         <motion.p
                             initial={{ opacity: 0, translateX: -100 }}
                             whileInView={{ opacity: 1, translateX: 1 }}
-                            transition={{ duration: 1 }}
-                            className='text-xl'
+                            transition={{ duration: 1, delay: 3 }}
+                            className='text-3xl tracking-wider'
                         >
                             {data.men.name}
                         </motion.p>
-                        <p className='text-xs mx-4'>{data.date}</p>
+                        <p className='text-3xl text-center mx-4'>&</p>
                         <motion.p
                             initial={{ opacity: 0, translateX: 100 }}
                             whileInView={{ opacity: 1, translateX: 1 }}
-                            transition={{ duration: 1 }}
-                            className='text-xl'
+                            transition={{ duration: 1, delay: 3 }}
+                            className='text-3xl tracking-wider'
                         >
                             {data.women.name}
                         </motion.p>
@@ -33,7 +33,7 @@ export default function QuotesSection() {
                     <motion.p
                         initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 1 }}
+                        transition={{ duration: 1, delay: 3.2 }}
                         className='italic text-center text-sm my-8'
                     >
                         "{data.quotes}"

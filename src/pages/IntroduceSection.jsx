@@ -7,6 +7,7 @@ import imageforwomen from '../image/women.jpg'
 export default function IntroduceSection() {
     return (
         <section className='h-full my-4 p-8 flex flex-col justify-center items-center'>
+            {/*---------- MEN ----------*/}
             <motion.img
                 src={imageformen}
                 initial={{ opacity: 0, scale: 0 }}
@@ -22,6 +23,7 @@ export default function IntroduceSection() {
                     initial={{ opacity: 0, translateX: -100 }}
                     whileInView={{ opacity: 1, translateX: 1 }}
                     transition={{ duration: 1 }}
+                    className='text-lg'
                 >
                     {data.men.fullname}
                 </motion.p>
@@ -50,6 +52,8 @@ export default function IntroduceSection() {
                     <span>{data.men.instagram}</span>
                 </a>
             </div>
+
+            {/*---------- WOMEN ----------*/}
             <motion.img
                 src={imageforwomen}
                 initial={{ opacity: 0, scale: 0 }}
@@ -65,6 +69,7 @@ export default function IntroduceSection() {
                     initial={{ opacity: 0, translateX: -100 }}
                     whileInView={{ opacity: 1, translateX: 1 }}
                     transition={{ duration: 1 }}
+                    className='text-lg'
                 >
                     {data.women.fullname}
                 </motion.p>

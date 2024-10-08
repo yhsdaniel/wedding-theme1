@@ -1,7 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion'
-import jenny from '../image/jenny-bg.png'
-import frem from '../image/frem.png'
 import CountDown from '../components/CountDown';
 import data from '../dataForWedding.json'
 
@@ -13,14 +11,13 @@ export default function CountdownSection() {
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1.5 }}
-                viewport={{ once: true }}
                 className='relative text-center flex flex-col justify-center items-center text-lg text-white'
             >
-                <div className='flex flex-col justify-center items-center bg-black/30 mx-8 my-auto rounded-3xl shadow-whiteShadow'>
+                <div className='flex flex-col justify-center items-center bg-black/30 mx-12 max-lg:mx-8 my-auto rounded-3xl shadow-whiteShadow'>
                     <div className='w-full my-8 flex flex-col justify-center items-center'>
-                        <p className='m-2 text-[2em]'>{data.men.name}</p>
-                        <p className='m-2 text-[2em]'>&</p>
-                        <p className='m-2 text-[2em]'>{data.women.name}</p>
+                        <p className='m-2 text-3xl tracking-widest font-greatvibes'>{data.men.name}</p>
+                        <p className='m-2 text-3xl font-greatvibes'>&</p>
+                        <p className='m-2 text-3xl tracking-widest font-greatvibes'>{data.women.name}</p>
                         <p className='w-9/12 text-sm mt-4'>Towards a Special Day and we hope you are part of our special day</p>
                     </div>
                     <div className='w-full my-8 flex justify-center items-center'>

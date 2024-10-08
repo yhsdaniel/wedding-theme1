@@ -6,25 +6,25 @@ const ShowCounter = ({ days, hours, minutes, seconds }) => {
         <div className="show-counter">
             <div className='container-time'>
                 <div className='box'>
-                    <span>{days}</span>
+                    <span className='text-xl'>{days}</span>
                     <span className='text-xs'>Days</span>
                 </div>
             </div>
             <div className='container-time'>
                 <div className='box'>
-                    <span>{hours}</span>
+                    <span className='text-xl'>{hours}</span>
                     <span className='text-xs'>Hours</span>
                 </div>
             </div>
             <div className='container-time'>
                 <div className='box'>
-                    <span>{minutes}</span>
+                    <span className='text-xl'>{minutes}</span>
                     <span className='text-xs'>Minutes</span>
                 </div>
             </div>
             <div className='container-time'>
                 <div className='box'>
-                    <span>{seconds}</span>
+                    <span className='text-xl'>{seconds}</span>
                     <span className='text-xs'>Seconds</span>
                 </div>
             </div>

@@ -11,9 +11,9 @@ import IntroduceSection from './pages/IntroduceSection'
 import QuotesSection from './pages/QuotesSection'
 import WeddingGiftSection from './pages/WeddingGiftSection'
 import RSVPSection from './pages/RSVPSection'
+import ThankyouSection from './pages/ThankyouSection'
 
 function App() {
-  const [isOpen, setIsOpen] = useState(true)
   const [isAnimation, setIsAnimation] = useState('')
   let wonAudio = new Audio(music)
 
@@ -32,10 +32,10 @@ function App() {
     <>
       <BannerSection onClose={handleClose} animationScroll={isAnimation} />
       <div className='flex relative overflow-x-hidden'>
-        <div className='h-screen hidden sm:block sm:w-8/12 relative'>
+        <div className='h-screen hidden sm:block md:w-7/12 lg:w-8/12 relative'>
           <BannerFixed />
         </div>
-        <div className='size-full sm:w-4/12 relative' >
+        <div className='size-full md:w-5/12 lg:w-4/12 relative'>
           <div className='size-full bg-black/60 bg-blend-multiply bg-fixed bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(${horizontal1})` }}>
             <QuotesSection />
             <IntroduceSection />
@@ -44,6 +44,7 @@ function App() {
             <CountdownSection />
             <WeddingGiftSection />
             <RSVPSection />
+            <ThankyouSection />
           </div>
         </div>
       </div>
