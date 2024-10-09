@@ -9,7 +9,7 @@ export default function BannerFixed() {
       <motion.p
         initial={{ opacity: 0, translateX: 100 }}
         whileInView={{ opacity: 1, translateX: 1 }}
-        transition={{ duration: 1, delay: 4 }}
+        transition={{ duration: 1, delay: 2 }}
         viewport={{ once: true }}
       >
         The Wedding of
@@ -17,7 +17,7 @@ export default function BannerFixed() {
       <motion.p
         initial={{ opacity: 0, translateX: 100 }}
         whileInView={{ opacity: 1, translateX: 1 }}
-        transition={{ duration: 1, delay: 4.2 }}
+        transition={{ duration: 1, delay: 2.2 }}
         viewport={{ once: true }}
         className='text-4xl my-4 font-greatvibes'
       >
@@ -26,7 +26,7 @@ export default function BannerFixed() {
       <motion.p
         initial={{ opacity: 0, translateX: 100 }}
         whileInView={{ opacity: 1, translateX: 1 }}
-        transition={{ duration: 1, delay: 4.4 }}
+        transition={{ duration: 1, delay: 2.4 }}
         viewport={{ once: true }}
       >
         {data.date}

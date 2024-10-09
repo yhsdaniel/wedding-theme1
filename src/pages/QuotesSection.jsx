@@ -14,7 +14,8 @@ export default function QuotesSection() {
                         <motion.p
                             initial={{ opacity: 0, translateX: -100 }}
                             whileInView={{ opacity: 1, translateX: 1 }}
-                            transition={{ duration: 1, delay: 3 }}
+                            transition={{ duration: 1, delay: 2 }}
+                            viewport={{ once: true }}
                             className='text-3xl tracking-wider'
                         >
                             {data.men.name}
@@ -23,7 +24,8 @@ export default function QuotesSection() {
                         <motion.p
                             initial={{ opacity: 0, translateX: 100 }}
                             whileInView={{ opacity: 1, translateX: 1 }}
-                            transition={{ duration: 1, delay: 3 }}
+                            transition={{ duration: 1, delay: 2 }}
+                            viewport={{ once: true }}
                             className='text-3xl tracking-wider'
                         >
                             {data.women.name}
@@ -33,7 +35,8 @@ export default function QuotesSection() {
                     <motion.p
                         initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 1, delay: 3.2 }}
+                        transition={{ duration: 1, delay: 2.2 }}
+                        viewport={{ once: true }}
                         className='italic text-center text-sm my-8'
                     >
                         "{data.quotes}"
