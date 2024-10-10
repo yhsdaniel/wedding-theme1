@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import jenny from '../image/jenny-bg.png'
 import { motion } from 'framer-motion'
-import { supabase } from '../supabase'
-import GenerateAvatar from '../components/ui/GenerateAvatar'
+import { supabase } from '../../supabase'
+import GenerateAvatar from '../../components/ui/GenerateAvatar'
 import toast from 'react-hot-toast'
 
 export default function RSVPSection() {

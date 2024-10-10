@@ -6,9 +6,9 @@ import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreSharpIcon from '@mui/icons-material/ExpandMoreSharp';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import { styled } from '@mui/material/styles';
-import data from '../dataForWedding.json'
-import bca from '../image/BCA.png'
-import Clipboard from '../components/Clipboard';
+import data from '../../dataForWedding.json'
+import bca from '../../image/BCA.png'
+import Clipboard from '../../components/Clipboard';
 
 const Accordion = styled((props) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />

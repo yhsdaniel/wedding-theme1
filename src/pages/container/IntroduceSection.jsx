@@ -1,8 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import data from '../dataForWedding.json'
-import imageformen from '../image/men.jpg'
-import imageforwomen from '../image/women.jpg'
+import data from '../../dataForWedding.json'
+import imageformen from '../../image/men.jpg'
+import imageforwomen from '../../image/women.jpg'
 
 export default function IntroduceSection() {
     return (

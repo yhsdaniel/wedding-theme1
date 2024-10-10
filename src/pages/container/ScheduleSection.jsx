@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import data from '../dataForWedding.json'
+import data from '../../dataForWedding.json'
 
 const ceremony = [
     {

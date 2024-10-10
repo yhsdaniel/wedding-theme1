@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import data from '../dataForWedding.json'
-import banner from '../image/banner.jpg'
+import data from '../../dataForWedding.json'
+import banner from '../../image/banner.jpg'
 
 export default function BannerSection({ onClose, animationScroll }) {
   return (

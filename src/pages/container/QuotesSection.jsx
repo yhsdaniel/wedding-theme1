@@ -1,8 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import banner from '../image/banner.jpg'
-import data from '../dataForWedding.json'
-import arrow from '../image/arrow-animation.gif'
+import banner from '../../image/banner.jpg'
+import arrow from '../../image/arrow-animation.gif'
+import data from '../../dataForWedding.json'
 
 export default function QuotesSection() {
     return (

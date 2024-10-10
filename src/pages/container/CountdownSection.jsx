@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion'
-import CountDown from '../components/CountDown';
-import data from '../dataForWedding.json'
+import CountDown from '../../components/CountDown';
+import data from '../../dataForWedding.json'
 
 export default function CountdownSection() {
     return (

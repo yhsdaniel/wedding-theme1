@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import horizontal1 from '../image/horizontal1.jpg'
+import horizontal1 from '../../image/horizontal1.jpg'
 
 export default function ThankyouSection() {
     return (
