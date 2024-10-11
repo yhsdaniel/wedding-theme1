@@ -6,7 +6,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/:username' element={<MainPage />} />
+        <Route path='/' element={<MainPage />} />
       </Routes>
     </Router>
   )
