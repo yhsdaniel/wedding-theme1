@@ -1,11 +1,9 @@
 {
-  "name": "theme1",
+  "name": "client",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "watch": "npx tailwindcss -i ./src/App.css -o ./src/output.css --watch",
     "build": "vite build",

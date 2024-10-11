@@ -6,7 +6,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/wedding-theme1/:username' element={<MainPage />} />
+        <Route path='/:username' element={<MainPage />} />
       </Routes>
     </Router>
   )
