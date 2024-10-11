@@ -566,14 +566,6 @@ video {
   z-index: 200;
 }
 
-.row-span-1 {
-  grid-row: span 1 / span 1;
-}
-
-.row-span-2 {
-  grid-row: span 2 / span 2;
-}
-
 .m-2 {
   margin: 0.5rem;
 }
@@ -666,10 +658,6 @@ video {
   display: flex;
 }
 
-.grid {
-  display: grid;
-}
-
 .hidden {
   display: none;
 }
@@ -697,6 +685,10 @@ video {
   height: 20rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-full {
   height: 100%;
 }
@@ -705,8 +697,8 @@ video {
   height: 100vh;
 }
 
-.max-h-96 {
-  max-height: 24rem;
+.max-h-80 {
+  max-height: 20rem;
 }
 
 .w-2\/12 {
@@ -763,14 +755,6 @@ video {
   cursor: pointer;
 }
 
-.grid-flow-col {
-  grid-auto-flow: column;
-}
-
-.grid-rows-4 {
-  grid-template-rows: repeat(4, minmax(0, 1fr));
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -797,10 +781,6 @@ video {
 
 .justify-evenly {
   justify-content: space-evenly;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .gap-6 {
@@ -919,10 +899,6 @@ video {
   background-position: center;
 }
 
-.bg-left-top {
-  background-position: left top;
-}
-
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
@@ -978,6 +954,10 @@ video {
 
 .font-greatvibes {
   font-family: Great Vibes, san-serif;
+}
+
+.font-parisienne {
+  font-family: Parisienne, sans-serif;
 }
 
 .text-2xl {
@@ -1175,14 +1155,23 @@ body {
     height: 100%;
   }
 
-  .txt {
-    padding: 0 1rem;
-  }
-
   .contain-card {
     flex-direction: column;
     margin: 0;
   }
+}
+
+.image-grid {
+  display: grid;
+  grid-column-gap: 10px;
+  align-items: start;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.image-grid-child{
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-row-gap: 10px;
 }
 
 /* Wedding CountDown */
@@ -1235,31 +1224,11 @@ body {
   flex-direction: column;
 }
 
-.f-number {
-  font-size: 38px;
-  font-weight: bold;
-}
-
 .countdown {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-@media only screen and (max-width: 460px) {
-  .f-txt-countdown {
-    text-align: center;
-    padding: 0 2rem;
-  }
-
-  .f-number {
-    font-size: 30px;
-  }
-
-  .f-txt {
-    font-size: 18px;
-  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -1273,22 +1242,6 @@ body {
 
   .container-time {
     margin: .5rem;
-  }
-}
-
-.f-street {
-  font-size: 18px;
-}
-
-@media only screen and (max-width: 460px) {
-  .lg-name {
-    background-size: 100%;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .font-link {
-    margin: .5rem 0;
   }
 }
 

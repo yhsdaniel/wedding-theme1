@@ -1,73 +1,124 @@
 import React, { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { ImageGallery } from 'react-image-grid-gallery'
-import horizontal1 from '../../image/horizontal1.jpg'
-import vertical1 from '../../image/vertical1.jpg'
-import vertical2 from '../../image/vertical2.jpg'
-import vertical3 from '../../image/vertical3.jpg'
-import vertical4 from '../../image/vertical4.jpg'
-import banner from '../../image/banner.jpg'
+import potrait1 from '../../image/potrait-1.jpg'
+import potrait2 from '../../image/potrait-2.jpg'
+import landscape1 from '../../image/landscape-1.jpg'
+import landscape2 from '../../image/landscape-2.jpg'
+import landscape3 from '../../image/landscape-3.jpg'
+import landscape4 from '../../image/landscape-4.jpg'
+import TitleComponent from '../../components/ui/TitleComponent'
 
-const images = [
+const imagesSecondRow = [
     {
-        alt: "Image1 alt text",
-        src: horizontal1,
+        image: landscape3,
     },
     {
-        alt: "Image2 alt text",
-        src: vertical1,
+        image: landscape4,
     },
     {
-        alt: "Image3 alt text",
-        src: vertical2,
+        image: potrait2,
+    }
+]
+
+const imageFirstRow = [
+    {
+        image: potrait1
     },
     {
-        alt: "Image4 alt text",
-        src: vertical3,
+        image: landscape1
     },
     {
-        alt: "Image5 alt text",
-        src: vertical4,
-    },
-    {
-        alt: "Image6 alt text",
-        src: banner,
+        image: landscape2
     },
 ]
 
 export default function GallerySection() {
+    const [selectedImg, setSelectedImg] = useState(null)
     return (
         <section className='h-full px-4 py-8 flex flex-col justify-center items-center'>
-            <h1 className='text-2xl text-white my-8'>Gallery</h1>
-            <ImageGallery 
-                imagesInfoArray={images}
-                columnCount={2}
-                columnWidth={150}
-                gapSize={10}
-            />
-            {/* <div className='grid grid-rows-4 grid-flow-col gap-4'>
-                {images.map((item, index) => (
+            <TitleComponent>
+                Gallery
+            </TitleComponent>
+            <div className='image-grid'>
+                {/* First Column */}
+                <div className='image-grid-child'>
+                    {imageFirstRow.map((item, index) => (
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, translateY: 100 }}
+                            whileInView={{ opacity: 1, translateY: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1, delay: 0.3 }}
+                            onClick={() => setSelectedImg(item.image)}
+                        >
+                            <img
+                                src={item.image}
+                                alt={`Gallery image ${index}`}
+                                width={500}
+                                height={900}
+                                loading='lazy'
+                                className='cursor-pointer w-full h-auto object-cover'
+                            />
+                        </motion.div>
+                    ))}
+                </div>
+
+                {/* Second Column */}
+                <div className='image-grid-child'>
+                    {imagesSecondRow.map((item, index) => (
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, translateY: 100 }}
+                            whileInView={{ opacity: 1, translateY: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1, delay: 0.3 }}
+                            onClick={() => setSelectedImg(item.image)}
+                        >
+                            <img
+                                src={item.image}
+                                alt={`Gallery image ${index}`}
+                                width={500}
+                                height={900}
+                                loading='lazy'
+                                className='cursor-pointer w-full h-auto object-cover'
+                            />
+                        </motion.div>
+                    ))}
+                </div>
+            </div>
+            <AnimatePresence>
+                {selectedImg && (
                     <motion.div
-                        key={index}
-                        layoutId={index}
-                        initial={{ opacity: 0, translateY: 100 }}
-                        whileInView={{ opacity: 1, translateY: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 1, delay: 0.3 }}
-                        className={item.classname}
-                        onClick={() => toggleModal(item.id)}
+                        className="backdrop"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        onClick={() => setSelectedImg(null)}
+                        style={{
+                            position: "fixed",
+                            top: 0,
+                            left: 0,
+                            width: "100vw",
+                            height: "100vh",
+                            zIndex: 100,
+                            backgroundColor: "rgba(0, 0, 0, 0.8)",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                        }}
                     >
-                        <img
-                            src={item.image}
-                            alt="image grid"
-                            width={500}
-                            height={900}
-                            loading='lazy'
-                            className='rounded-lg size-full'
+                        <motion.img
+                            src={selectedImg}
+                            alt="Enlarged image"
+                            initial={{ scale: 0 }}
+                            animate={{ scale: 1 }}
+                            exit={{ scale: 0 }}
+                            transition={{ duration: 0.5 }}
+                            style={{ maxHeight: "90%", maxWidth: "90%" }}
                         />
                     </motion.div>
-                ))}
-            </div> */}
+                )}
+            </AnimatePresence>
         </section>
     )
 }

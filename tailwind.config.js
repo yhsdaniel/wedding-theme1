@@ -20,11 +20,15 @@ export default {
       'whiteShadow': '0px 0px 8px 0px rgba(255, 255, 255, .7) inset',
       'md': '0px 1px 2px 0px rgb(255 255 255 / 0.1)'
     },
-    gridTemplateColumns: {
-      'minmax01fr': 'repeat(3, minmax(0, 1fr))'
-    },
     fontFamily: {
-      'greatvibes': ['Great Vibes', 'san-serif']
+      'greatvibes': ['Great Vibes', 'san-serif'],
+      'parisienne': ['Parisienne', 'sans-serif']
+    },
+    gridTemplateColumns: {
+      'autoGrid': 'repeat(auto-fill, minmax(150px, 1fr))'
+    },
+    columns: {
+      'gridGallery': '150px 2'
     }
   },
   plugins: [],

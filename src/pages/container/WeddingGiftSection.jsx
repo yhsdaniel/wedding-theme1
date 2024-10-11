@@ -9,6 +9,7 @@ import { styled } from '@mui/material/styles';
 import data from '../../dataForWedding.json'
 import bca from '../../image/BCA.png'
 import Clipboard from '../../components/Clipboard';
+import TitleComponent from '../../components/ui/TitleComponent';
 
 const Accordion = styled((props) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -49,14 +50,9 @@ export default function WeddingGiftSection() {
         <section className='h-full pt-4'>
             <div className='p-8 mt-4 bg-white/20 text-white'>
                 <>
-                    <motion.p
-                        initial={{ opacity: 0, translateX: 100 }}
-                        whileInView={{ opacity: 1, translateX: 1 }}
-                        transition={{ duration: 1, delay: 0.2 }}
-                        className='text-xl'
-                    >
+                    <TitleComponent>
                         Wedding Gift
-                    </motion.p>
+                    </TitleComponent>
                     <motion.p
                         initial={{ opacity: 0, translateX: -100 }}
                         whileInView={{ opacity: 1, translateX: 1 }}

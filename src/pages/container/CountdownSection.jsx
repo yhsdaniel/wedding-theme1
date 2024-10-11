@@ -2,11 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion'
 import CountDown from '../../components/CountDown';
 import data from '../../dataForWedding.json'
+import TitleComponent from '../../components/ui/TitleComponent';
 
 export default function CountdownSection() {
     return (
         <section className='relative h-full flex flex-col justify-center items-center'>
-            <h1 className='text-2xl text-white my-8'>Countdown</h1>
+            <TitleComponent>
+                Countdown
+            </TitleComponent>
             <motion.div
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { supabase } from '../../supabase'
 import GenerateAvatar from '../../components/ui/GenerateAvatar'
 import toast from 'react-hot-toast'
+import TitleComponent from '../../components/ui/TitleComponent'
 
 export default function RSVPSection() {
     const [formData, setFormData] = useState({
@@ -60,19 +61,15 @@ export default function RSVPSection() {
     }
 
     return (
-        <section className='h-full p-4 bg-cover bg-left-top bg-no-repeat bg-blend-multiply'>
-            <motion.h1
-                initial={{ opacity: 0, translateX: 100 }}
-                whileInView={{ opacity: 1, translateX: 1 }}
-                transition={{ duration: 1 }}
-                className='text-2xl text-white text-center my-8'
-            >
+        <section className='h-full p-4'>
+            <TitleComponent>
                 Konfirmasi Kehadiran & Ucapan
-            </motion.h1>
+            </TitleComponent>
             <motion.div
                 initial={{ opacity: 0, translateX: 100 }}
                 whileInView={{ opacity: 1, translateX: 1 }}
                 transition={{ duration: 1, delay: 1 }}
+                viewport={{ once: true }}
                 className='p-8 m-4 bg-black/40 rounded-2xl'
             >
                 <form onSubmit={handleSubmit} className="max-w-sm mx-auto">
@@ -100,11 +97,6 @@ export default function RSVPSection() {
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                                 <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
                             </select>
                         </div>
                     ) : null}
@@ -113,7 +105,7 @@ export default function RSVPSection() {
 
                 {/*========== Chat Section ========== */}
                 <div className='my-6 max-w-sm mx-auto bg-white/10 rounded-xl'>
-                    <div className='max-h-96 overflow-y-auto overflow-x-auto border border-white/20 rounded-xl'>
+                    <div className='max-h-80 overflow-y-auto overflow-x-auto border border-white/20 rounded-xl'>
                         {dataAttendance?.map(value => (
                             <div key={value.id} className='p-2 flex text-sm text-white'>
                                 <div className='w-2/12 flex justify-center items-start'>

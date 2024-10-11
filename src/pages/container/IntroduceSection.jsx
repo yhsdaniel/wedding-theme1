@@ -3,10 +3,14 @@ import { motion } from 'framer-motion'
 import data from '../../dataForWedding.json'
 import imageformen from '../../image/men.jpg'
 import imageforwomen from '../../image/women.jpg'
+import TitleComponent from '../../components/ui/TitleComponent'
 
 export default function IntroduceSection() {
     return (
         <section className='h-full my-4 p-8 flex flex-col justify-center items-center'>
+            <TitleComponent>
+                The Bride
+            </TitleComponent>
             {/*---------- MEN ----------*/}
             <motion.img
                 src={imageformen}

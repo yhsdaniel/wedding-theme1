@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import data from '../../dataForWedding.json'
+import TitleComponent from '../../components/ui/TitleComponent'
 
 const ceremony = [
     {
@@ -24,7 +25,9 @@ const ceremony = [
 export default function ScheduleSection() {
     return (
         <section className='h-full mx-[8%] my-auto flex flex-col justify-center items-center'>
-            <h1 className='text-2xl text-white my-8'>Schedule</h1>
+            <TitleComponent>
+                Location
+            </TitleComponent>
             <div className='size-full flex flex-col gap-6'>
                 <div className='WeddingEvent'>
                     <div className="contain-card">

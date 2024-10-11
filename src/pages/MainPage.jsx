@@ -5,8 +5,8 @@ import GallerySection from './container/GallerySection'
 import ScheduleSection from './container/ScheduleSection'
 import CountdownSection from './container/CountdownSection'
 import BannerFixed from '../pages/BannerFixed'
-import music from '../../public/upload/music.mp3'
-import horizontal1 from '../image/horizontal1.jpg'
+import music from '../upload/music.mp3'
+import image1 from '../image/potrait-1.jpg'
 import IntroduceSection from './container/IntroduceSection'
 import QuotesSection from './container/QuotesSection'
 import WeddingGiftSection from './container/WeddingGiftSection'
@@ -50,7 +50,7 @@ export default function MainPage() {
           <BannerFixed />
         </div>
         <div className='size-full md:w-5/12 lg:w-4/12 relative'>
-          <div className='size-full bg-black/60 bg-blend-multiply bg-fixed bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(${horizontal1})` }}>
+          <div className='size-full bg-black/60 bg-blend-multiply bg-fixed bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(${image1})` }}>
             <QuotesSection />
             <IntroduceSection />
             <ScheduleSection />

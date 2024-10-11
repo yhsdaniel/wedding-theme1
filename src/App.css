@@ -81,14 +81,23 @@ body {
         height: 100%;
     }
 
-    .txt {
-        padding: 0 1rem;
-    }
-
     .contain-card {
         flex-direction: column;
         margin: 0;
     }
+}
+
+.image-grid {
+    display: grid;
+    grid-column-gap: 10px;
+    align-items: start;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.image-grid-child{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-row-gap: 10px;
 }
 
 /* Wedding CountDown */
@@ -140,32 +149,11 @@ body {
     flex-direction: column;
 }
 
-.f-number {
-    font-size: 38px;
-    font-weight: bold;
-}
-
-
 .countdown {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-@media only screen and (max-width: 460px) {
-    .f-txt-countdown {
-        text-align: center;
-        padding: 0 2rem;
-    }
-
-    .f-number {
-        font-size: 30px;
-    }
-
-    .f-txt {
-        font-size: 18px;
-    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -182,22 +170,6 @@ body {
     }
 }
 
-.f-street {
-    font-size: 18px;
-}
-
-@media only screen and (max-width: 460px) {
-    .lg-name {
-        background-size: 100%;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .font-link {
-        margin: .5rem 0;
-    }
-}
-
 .animateMoveTop {
     animation: .3s moveTop forwards ease-in;
 }
@@ -206,6 +178,7 @@ body {
     0% {
         transform: translateY(1);
     }
+
     100% {
         transform: translateY(-100%);
     }
