@@ -5,7 +5,7 @@ import TitleComponent from '../../components/ui/TitleComponent'
 
 export default function ThankyouSection() {
     return (
-        <section className='relative h-screen text-white text-center flex flex-col justify-start items-center'>
+        <section className='relative h-full text-white text-center flex flex-col justify-start items-center'>
             <div className='p-8 flex flex-col justify-center items-center'>
                 <TitleComponent>
                     Thank you for your prayer

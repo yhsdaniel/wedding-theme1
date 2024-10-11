@@ -614,14 +614,14 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .my-8 {
@@ -634,17 +634,8 @@ video {
   margin-bottom: auto;
 }
 
-.my-3 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
 }
 
 .mb-8 {
@@ -653,6 +644,10 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .block {
@@ -700,10 +695,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.max-h-80 {
-  max-height: 20rem;
 }
 
 .max-h-72 {
@@ -947,6 +938,26 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .pb-8 {
@@ -1222,8 +1233,8 @@ body {
 .box {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .6);
-  box-shadow: 0px 2px 8px 0px rgba(255, 255, 255, .2);
+  /* background-color: rgba(0, 0, 0, .6); */
+  /* box-shadow: 0px 2px 8px 0px rgba(255, 255, 255, .2); */
   border-radius: 8px;
   color: #fff;
   font-size: 18px;
@@ -1250,7 +1261,7 @@ body {
   }
 
   .container-time {
-    margin: .5rem;
+    margin: .3rem;
   }
 }
 
@@ -1332,6 +1343,10 @@ body {
 
   .md\:p-8 {
     padding: 2rem;
+  }
+
+  .md\:p-4 {
+    padding: 1rem;
   }
 }
 

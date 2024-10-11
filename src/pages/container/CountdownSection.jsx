@@ -23,7 +23,7 @@ export default function CountdownSection() {
                         <p className='m-2 text-3xl tracking-widest font-greatvibes'>{data.women.name}</p>
                         <p className='w-9/12 text-sm mt-4'>Towards a Special Day and we hope you are part of our special day</p>
                     </div>
-                    <div className='w-full my-8 flex justify-center items-center'>
+                    <div className='w-full mb-8 mt-2 flex justify-center items-center'>
                         <CountDown targetDate={'Dec 7, 2024 09:00:00'} />
                     </div>
                 </div>
