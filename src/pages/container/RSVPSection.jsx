@@ -73,15 +73,15 @@ export default function RSVPSection() {
                 className='p-8 m-4 bg-black/40 rounded-2xl'
             >
                 <form onSubmit={handleSubmit} className="max-w-sm mx-auto">
-                    <div className="mb-5">
+                    <div className="mb-2">
                         <label htmlFor="name" className="block mb-2 text-sm font-medium text-white">Nama</label>
                         <input type="name" id="name" name='name' value={formData.name} className="border border-gray-300 text-white text-sm rounded-lg block w-full p-2 bg-transparent placeholder:text-white/50" placeholder="Nama ..." onChange={handleChange} />
                     </div>
-                    <div className='mb-5'>
+                    <div className='mb-2'>
                         <label htmlFor="message" className="block mb-2 text-sm font-medium text-white">Ucapan:</label>
                         <textarea id="message" name='message' rows="4" value={formData.message} className="block p-2 w-full text-sm text-white bg-gray-50 rounded-lg border border-gray-300 bg-transparent placeholder:text-white/50" placeholder="Ucapan..." onChange={handleChange}></textarea>
                     </div>
-                    <div className='mb-5'>
+                    <div className='mb-2'>
                         <label htmlFor="attendance" className="block mb-2 text-sm font-medium text-white">Konfirmasi kehadiran</label>
                         <select id="attendance" name='attendance' value={formData.attendance} className="border border-gray-300 text-white text-sm rounded-lg block w-full p-2 bg-transparent placeholder:text-white/50" required onChange={handleChange}>
                             <option value='true'>Hadir</option>
@@ -89,7 +89,7 @@ export default function RSVPSection() {
                         </select>
                     </div>
                     {isVisible === 'true' ? (
-                        <div className='mb-5'>
+                        <div className='mb-2'>
                             <label htmlFor="guest" className="block mb-2 text-sm font-medium text-white">Tamu</label>
                             <select id="guest" name='guest' value={formData.guest} className="border border-gray-300 text-white text-sm rounded-lg block w-full p-2 bg-transparent placeholder:text-white/50" required onChange={handleChange}>
                                 <option value="1">1</option>
@@ -104,8 +104,8 @@ export default function RSVPSection() {
                 </form>
 
                 {/*========== Chat Section ========== */}
-                <div className='my-6 max-w-sm mx-auto bg-white/10 rounded-xl'>
-                    <div className='max-h-80 overflow-y-auto overflow-x-auto border border-white/20 rounded-xl'>
+                <div className='my-3 max-w-sm mx-auto bg-white/10 rounded-xl'>
+                    <div className='max-h-72 overflow-y-auto overflow-x-auto border border-white/20 rounded-xl'>
                         {dataAttendance?.map(value => (
                             <div key={value.id} className='p-2 flex text-sm text-white'>
                                 <div className='w-2/12 flex justify-center items-start'>

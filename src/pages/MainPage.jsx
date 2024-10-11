@@ -21,18 +21,19 @@ export default function MainPage() {
   const [isAnimation, setIsAnimation] = useState('')
   let wonAudio = new Audio(music)
 
+  const fetchUserData = async () => {
+    const { data: user, error } = await supabase.from('bride').select('*').eq('username', username).single()
+
+    if (error) {
+      console.log(error)
+    } else {
+      setUserData(user)
+    }
+  }
+
   useEffect(() => {
     document.body.style.overflow = 'hidden'
-    const fetchUserData = async () => {
-      const {data: user, error} = await supabase.from('bride').select('*').eq('username', username).single()
-
-      if(error){
-        console.log(error)
-      } else {
-        setUserData(user)
-        fetchUserData(user.id)
-      }
-    }
+    fetchUserData()
   }, [])
 
   const handleClose = () => {
@@ -42,26 +43,28 @@ export default function MainPage() {
     window.scrollTo(0, 0)
   }
 
-  return (
-    <>
-      <BannerSection onClose={handleClose} animationScroll={isAnimation} />
-      <div className='flex relative overflow-x-hidden'>
-        <div className='h-screen hidden sm:block md:w-7/12 lg:w-8/12 relative'>
-          <BannerFixed />
-        </div>
-        <div className='size-full md:w-5/12 lg:w-4/12 relative'>
-          <div className='size-full bg-black/60 bg-blend-multiply bg-fixed bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(${image1})` }}>
-            <QuotesSection />
-            <IntroduceSection />
-            <ScheduleSection />
-            <GallerySection />
-            <CountdownSection />
-            <WeddingGiftSection />
-            <RSVPSection />
-            <ThankyouSection />
+  if (userData) {
+    return (
+      <>
+        <BannerSection onClose={handleClose} animationScroll={isAnimation} />
+        <div className='flex relative overflow-x-hidden'>
+          <div className='h-screen hidden sm:block md:w-7/12 lg:w-8/12 relative'>
+            <BannerFixed />
+          </div>
+          <div className='size-full md:w-5/12 lg:w-4/12 relative'>
+            <div className='size-full bg-black/60 bg-blend-multiply bg-fixed bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(${image1})` }}>
+              <QuotesSection />
+              <IntroduceSection />
+              <ScheduleSection />
+              <GallerySection />
+              <CountdownSection />
+              <WeddingGiftSection />
+              <RSVPSection />
+              <ThankyouSection />
+            </div>
           </div>
         </div>
-      </div>
-    </>
-  )
+      </>
+    )
+  }
 }
