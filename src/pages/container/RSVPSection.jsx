@@ -74,15 +74,15 @@ export default function RSVPSection() {
             >
                 <form onSubmit={handleSubmit} className="max-w-sm mx-auto">
                     <div className="mb-2">
-                        <label htmlFor="name" className="block mb-2 text-sm font-medium text-white">Nama</label>
+                        <label htmlFor="name" className="block mb-1 text-sm font-medium text-white">Nama</label>
                         <input type="name" id="name" name='name' value={formData.name} className="border border-gray-300 text-white text-sm rounded-lg block w-full p-2 bg-transparent placeholder:text-white/50" placeholder="Nama ..." onChange={handleChange} />
                     </div>
                     <div className='mb-2'>
-                        <label htmlFor="message" className="block mb-2 text-sm font-medium text-white">Ucapan:</label>
-                        <textarea id="message" name='message' rows="4" value={formData.message} className="block p-2 w-full text-sm text-white bg-gray-50 rounded-lg border border-gray-300 bg-transparent placeholder:text-white/50" placeholder="Ucapan..." onChange={handleChange}></textarea>
+                        <label htmlFor="message" className="block mb-1 text-sm font-medium text-white">Ucapan:</label>
+                        <textarea id="message" name='message' rows="4" value={formData.message} className="border border-gray-300 text-white text-sm rounded-lg block w-full p-2 bg-transparent placeholder:text-white/50" placeholder="Ucapan..." onChange={handleChange}></textarea>
                     </div>
                     <div className='mb-2'>
-                        <label htmlFor="attendance" className="block mb-2 text-sm font-medium text-white">Konfirmasi kehadiran</label>
+                        <label htmlFor="attendance" className="block mb-1 text-sm font-medium text-white">Konfirmasi kehadiran</label>
                         <select id="attendance" name='attendance' value={formData.attendance} className="border border-gray-300 text-white text-sm rounded-lg block w-full p-2 bg-transparent placeholder:text-white/50" required onChange={handleChange}>
                             <option value='true'>Hadir</option>
                             <option value='false'>Tidak hadir</option>
@@ -90,7 +90,7 @@ export default function RSVPSection() {
                     </div>
                     {isVisible === 'true' ? (
                         <div className='mb-2'>
-                            <label htmlFor="guest" className="block mb-2 text-sm font-medium text-white">Tamu</label>
+                            <label htmlFor="guest" className="block mb-1 text-sm font-medium text-white">Tamu</label>
                             <select id="guest" name='guest' value={formData.guest} className="border border-gray-300 text-white text-sm rounded-lg block w-full p-2 bg-transparent placeholder:text-white/50" required onChange={handleChange}>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -100,7 +100,7 @@ export default function RSVPSection() {
                             </select>
                         </div>
                     ) : null}
-                    <button type="submit" className="text-white bg-white/30 hover:bg-white/50 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2 text-center duration-150 ease-in-out" onClick={handleSubmit}>Submit</button>
+                    <button type="submit" className="text-white bg-white/30 my-3 hover:bg-white/50 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2 text-center duration-150 ease-in-out" onClick={handleSubmit}>Submit</button>
                 </form>
 
                 {/*========== Chat Section ========== */}

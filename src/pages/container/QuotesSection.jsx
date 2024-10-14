@@ -1,12 +1,12 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import banner from '../../image/banner.jpg'
+import image1 from '../../image/potrait-1.jpg'
 import arrow from '../../image/arrow-animation.gif'
 import data from '../../dataForWedding.json'
 
 export default function QuotesSection() {
     return (
-        <section className='h-screen bg-black/50 text-white bg-cover bg-center bg-blend-multiply' style={{ backgroundImage: `url(${banner})` }}>
+        <section className='h-screen bg-black/50 text-white bg-cover bg-center bg-blend-multiply' style={{ backgroundImage: `url(${image1})` }}>
             <div className='h-full p-4 py-16 md:p-8 mx-0 my-auto'>
                 <div className='size-full flex flex-col justify-end items-center'>
                     <span>The Wedding of</span>
